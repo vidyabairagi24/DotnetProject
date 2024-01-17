@@ -41,7 +41,7 @@ public class LikesRepository : ILikesRepository
         var likedUsers = users.Select(user => new LikeDto
         {
             UserName = user.UserName,
-            KnownAs = user.KnownAS,
+            KnownAs = user.KnownAs,
             Age = user.DateOfBirth.CalculateAge(),
             PhotoUrl = user.Photos.FirstOrDefault(x => x.IsMain).Url,
             City = user.City,

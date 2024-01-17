@@ -11,7 +11,7 @@ namespace API.Controllers;
 [Authorize]
 public class MessagesController : BaseApiController
 {
-    private readonly IUnitOfWork _uow;
+     private readonly IUnitOfWork _uow;
     private readonly IMapper _mapper;
     public MessagesController(IUnitOfWork uow, IMapper mapper)
     {
